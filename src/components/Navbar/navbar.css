@@ -1,0 +1,45 @@
+.navbarClass {
+    align-items: center;
+    background: white;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+}
+
+@media screen and (max-width: 576px){
+    .navbarClass {
+        height: 6rem;
+    }
+}
+
+.logo {
+    height: 3rem;
+    object-fit: cover;
+    width: 4rem;
+}
+
+.desktopMenuListItem {
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem;
+}
+@media screen and (max-width: 576px){
+    .desktopMenuListItem {
+        margin: 0.5rem;
+    }
+}
+
+.desktopMenuListItem:hover {
+    color: grey;
+}
+
+.iconClass {
+    color: #0de283;
+    padding-right: 2px;
+}

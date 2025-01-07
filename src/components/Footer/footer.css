@@ -1,0 +1,15 @@
+.footer {
+    background: white;
+    bottom: 0;
+    height: 2rem;
+    margin: 1px 2vw;
+    position: fixed;
+    text-align: right;
+    width: 96vw;
+}
+
+@media screen and (max-width: 576px){
+    .footer {
+        height: 3.5rem;
+    }
+}
