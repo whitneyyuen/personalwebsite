@@ -1,13 +1,34 @@
 
 #contact {
     /*height: calc(100vh - 7rem);*/
-    margin: auto 30px 2.5rem 30px;
+    margin: auto 30px 120px 30px;
 }
 
 @media screen and (max-width: 576px){
     #contact {
         /*height: calc(100vh - 9.5rem);*/
         margin: auto 10px 50px 10px;
+    }
+}
+
+.contactBtn {
+    background: #e5f7ff;
+    border-radius: 10px;
+    display: flex;
+    font-size: 30px;
+    margin: 5px auto;
+    justify-content: space-evenly;
+    max-width: 900px;
+    padding: 5px;
+}
+
+.contactFormBtn {
+    margin: 10px;    
+}
+
+@media screen and (max-width: 576px){
+    .contactFormBtn {
+        width: -webkit-fill-available;    
     }
 }
 

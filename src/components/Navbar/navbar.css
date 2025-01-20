@@ -1,6 +1,6 @@
 .navbarClass {
     align-items: center;
-    background: white;
+    background: #2a7999;
     display: flex;
     height: 5rem;
     justify-content: space-between;
@@ -12,7 +12,7 @@
     z-index: 3;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .navbarClass {
         height: 6rem;
     }
@@ -25,13 +25,43 @@
 }
 
 .desktopMenuListItem {
+    background:
+        radial-gradient(12px 11px, white 98%, transparent 100%) 18% 25% /25px 23px,
+        radial-gradient(25px 22px, white 98%, transparent 100%) 50% 50% /47px 45px,
+        radial-gradient(17px, white 98%, transparent 100%) 100% 100%/35px 37px,
+        radial-gradient(13px, white 98%, transparent 100%) 0 100% /28px 36px,
+        linear-gradient(white, white) bottom/100% 19px;
+    background-repeat: no-repeat;
+    border-radius: 0 0 25px 25px;
+    color: black;
     cursor: pointer;
     display: inline-block;
     margin: 1rem;
+    padding: 10px 5px;
+    text-decoration: auto;
 }
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px) {
     .desktopMenuListItem {
         margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+    .mobileMenu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .desktopMenu {
+        display: block;
+    }
+    .mobileMenu {
+        display: none;
     }
 }
 
@@ -39,7 +69,31 @@
     color: grey;
 }
 
+.desktopMenuListItem.active {
+    background:
+        radial-gradient(12px 11px, #f1e7e7 98%, transparent 100%) 18% 25% /25px 23px,
+        radial-gradient(25px 22px, #f1e7e7 98%, transparent 100%) 50% 50% /47px 45px,
+        radial-gradient(17px, #f1e7e7 98%, transparent 100%) 100% 100%/35px 37px,
+        radial-gradient(13px, #f1e7e7 98%, transparent 100%) 0 100% /28px 36px,
+        linear-gradient(#f1e7e7, #f1e7e7) bottom/100% 19px;
+    background-repeat: no-repeat;
+    border-radius: 0 0 25px 25px;
+    font-weight: bold;
+}
+
 .iconClass {
     color: #0de283;
     padding-right: 2px;
+}
+
+.mobileMenuListItem {
+    background: #f1e7e7;
+    border: 2px dotted black;
+    color: black;
+    padding: 10px;
+    text-decoration: auto;
+}
+
+#offcanvasNavbar-expand-sm {
+    background: #2a7999;
 }

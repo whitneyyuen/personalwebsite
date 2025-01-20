@@ -1,15 +1,25 @@
 .footer {
-    background: white;
+    background: linear-gradient(#6ecdf7, #0083b9, #6ecdf7);
     bottom: 0;
+    color: #f0f7fb;
+    display: inline-flex;
     height: 2rem;
-    margin: 1px 2vw;
+    margin: initial;
+    padding: 0 8px;
     position: fixed;
-    text-align: right;
-    width: 96vw;
+    text-align: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 576px){
     .footer {
         height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .footer {
+        height: 2.5rem;
+        font-size: 15px;
     }
 }

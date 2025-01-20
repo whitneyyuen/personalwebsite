@@ -2,14 +2,6 @@ a:hover {
     opacity: 0.7;
 }
 
-.contactBtn {
-    display: flex;
-    font-size: 30px;
-    justify-content: space-evenly;
-    margin: 5px;
-    padding: 5px;
-}
-
 .cv {
     background-color: black;
     border: 1px solid #0de283;
@@ -17,18 +9,20 @@ a:hover {
     display: inline-block;
     float: right;
     font-size: 20px;
-    margin: 5px;
+    margin: 5px 0 5px 5px;
     padding: 10px 15px;
 }
 
 @media screen and (max-width: 576px){
     .cv {
         float: unset;
+        margin: 5px 5px 5px 0;
     }
 }
 
 .cv a {
     color: #0de283;
+    text-decoration: auto;
 }
 
 .cv:hover {
@@ -38,7 +32,8 @@ a:hover {
 }
 
 .profile {
-    max-width: inherit;
+    margin-top: 5px;
+    max-width: -webkit-fill-available;
 }
 
 .iconClass {
@@ -48,7 +43,7 @@ a:hover {
 
 #intro {
     /*height: calc(100vh - 7rem);*/
-    margin: auto 30px;
+    margin: auto 30px 50px 30px;
     /*overflow-y: auto;*/
 }
 
@@ -118,6 +113,7 @@ a:hover {
 
 .selfIntro {
     color: black;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -130,13 +126,13 @@ a:hover {
 
 #title {
     display: block;
-    color: #00000070;
+    color: #bab3b3;
     font-size: 20px;
 }
 
 #desc {
     display: block;
-    color: #000000b8;
+    color: #fff3f3;
     text-align: justify;
     font-size: 15px;
 }

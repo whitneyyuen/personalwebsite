@@ -5,7 +5,6 @@ import imageLink from '../../assets/selfie.JPG';
 import cv from '../../assets/CV.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Intro = () => {
     return (
@@ -14,17 +13,12 @@ const Intro = () => {
                 <Container>
                     <Row>
                         <Col xs={12} md={4}>
-                            <img src={imageLink} alt="profile" className="profile" />
                             <p className="selfIntro">
+                                <img src={imageLink} alt="profile" className="profile" />
                                 <span id="name">Whitney Yuen</span>
                                 <span id="title">Full Stack JAVA Developer</span>
                                 <span id="desc">I am a skilled Full Stack JAVA Developer with experience in proficient both frontend and backend web application development.</span>
                             </p>
-                            <div className="contactBtn">
-                                <a href="https://github.com/whitneyyuen" target='_blank;'><FontAwesomeIcon color="black" icon={faGithub} /></a>
-                                <a href="https://www.linkedin.com/in/whitney-yuen/" target='_blank;'><FontAwesomeIcon color="blue" icon={faLinkedin} /></a>
-                                <a href="https://www.youtube.com/@whitneyney21" target='_blank;'><FontAwesomeIcon color="red" icon={faYoutube} /></a>
-                            </div>
                         </Col>
                         <Col xs={12} md={8}>
                             <div id="exp">
