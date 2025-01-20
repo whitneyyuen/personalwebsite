@@ -34,38 +34,38 @@ const Navbar2 = () => {
                 </Link>
             </div>
             <div className="mobileMenu">
-                <Navbar key="md" expand="md">
+                <Navbar collapseOnSelect key="sm" expand="sm">
                     <Container fluid>
-                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
                         <Navbar.Offcanvas
-                            id={`offcanvasNavbar-expand-md`}
-                            aria-labelledby={`offcanvasNavbarLabel-expand-md`}
+                            id={`offcanvasNavbar-expand-sm`}
+                            aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
                             placement="end"
                         >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
                                     <img src={logo} alt="Logo" className='logo' />
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Link activeClass="active" className="mobileMenuListItem" to="intro" spy={true} smooth={true} offset={-100} duration={500}>
+                                    <Nav.Link href="#intro" className="mobileMenuListItem" >
                                         <FontAwesomeIcon className="iconClass" icon={faHouse} />Home
-                                    </Link>
-                                    <Link activeClass="active" className="mobileMenuListItem" to="intro" spy={true} smooth={true} offset={-100} duration={500}>
+                                    </Nav.Link>
+                                    <Nav.Link href="#intro" className="mobileMenuListItem" >
                                         <FontAwesomeIcon className="iconClass" icon={faUser} />About Me
-                                    </Link>
-                                    <Link activeClass="active" className="mobileMenuListItem" to="exp" spy={true} smooth={true} offset={-100} duration={500}>
+                                    </Nav.Link>
+                                    <Nav.Link href="#exp" className="mobileMenuListItem" >
                                         <FontAwesomeIcon className="iconClass" icon={faBriefcase} />Experience
-                                    </Link>
-                                    {/* 
-                        <Link activeClass="active" className="mobileMenuListItem" to="skills" spy={true} smooth={true} offset={-100} duration={500}>
-                            <FontAwesomeIcon className="iconClass" icon={faUser} />Skills
-                        </Link>
-                        */}
-                                    <Link activeClass="active" className="mobileMenuListItem" to="contact" spy={true} smooth={true} offset={-100} duration={500}>
+                                    </Nav.Link>
+                                    {/*
+                                            <Nav.Link href="#exp" className="mobileMenuListItem" >
+                                                <FontAwesomeIcon className="iconClass" icon={faUser} />Skills
+                                            </Nav.Link>
+                                            */}
+                                    <Nav.Link href="#contact" className="mobileMenuListItem" >
                                         <FontAwesomeIcon className="iconClass" icon={faEnvelope} />Contact Me
-                                    </Link>
+                                    </Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
@@ -73,9 +73,6 @@ const Navbar2 = () => {
                 </Navbar>
             </div>
         </nav>
-
-
-
     )
 }
 

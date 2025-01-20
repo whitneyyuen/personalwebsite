@@ -33,6 +33,7 @@ a:hover {
 
 .profile {
     margin-top: 5px;
+    max-height: fit-content;
     max-width: -webkit-fill-available;
 }
 
