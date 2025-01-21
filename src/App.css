@@ -1,0 +1,23 @@
+.maincontent {
+}
+
+@media screen and (max-width: 576px) {
+    .maincontent {
+        bottom: 2rem;
+        height: calc(100vh - 9.5rem);
+        overflow-y: auto;
+        position: absolute;
+        top: 6rem;
+        width: 100%;
+        
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .maincontent {
+        background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHlhOGFxNHlvaWU4ZmVzaHgxcGZkNDVrN2pwdHhzOW51NjFnYnJmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yXkH4CfyU8LNcNmtPF/giphy.gif);
+        background-repeat: no-repeat;
+        background-size: 768px calc(100vh - 9.5rem);
+    }
+}
