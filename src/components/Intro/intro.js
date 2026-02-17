@@ -2,7 +2,6 @@ import React from 'react';
 import './intro.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import { USER_INFO } from '../../constants';
-import imageLink from '../../assets/selfie.JPG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,36 +16,15 @@ const Intro = () => {
                     Available for new opportunities
                 </div>
 
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+                    Crafting Digital Experiences <br />
+                    <span className="text-gradient">With Intelligence.</span>
+                </h1>
+
                 <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                     Hi, I'm <span className="text-white font-medium">{USER_INFO.name}</span>. I build high-performance web applications and integrate cutting-edge AI to solve real-world problems.
                 </p>
             </div>
-
-            <div className="container mx-auto">
-                <div className="grid grid-cols-1 gap-16 items-center">
-                    <div className="relative">
-                        <img src={imageLink} alt="Whitney Yuen profile" className="profile" />
-                        {/*<div className="w-full aspect-[3/4] rounded-3xl overflow-hidden glass p-3 border border-white/10 group">
-                            <img
-                                src={imageLink}
-                                alt="Whitney Yuen Profile"
-                                className="profile w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700"
-                            />
-                        </div>*/}
-                    </div>
-
-                    <div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">About <span className="text-gradient">Me</span></h2>
-                        <p className="text-slate-400 leading-relaxed mb-6">
-                            {USER_INFO.bio}
-                        </p>
-                        <p className="text-slate-400 leading-relaxed mb-10">
-                            I am a Software Engineer based in Toronto. With a strong foundation in backend development and experience leading Agile teams, I specialize in building robust enterprise solutions. I enjoy the intersection of clean code, efficient algorithms, and seamless user experiences.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
 
             {/*
             <div className="introContent">

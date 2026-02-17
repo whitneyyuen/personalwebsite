@@ -2,12 +2,6 @@ a:hover {
     opacity: 0.7;
 }
 
-.profile {
-    margin-top: 5px;
-    height: fit-content;
-    max-width: -webkit-fill-available;
-}
-
 .iconClass {
     color: #0de283;
     padding-right: 5px;
@@ -15,7 +9,7 @@ a:hover {
 
 #intro {
     /*height: calc(100vh - 7rem);*/
-    margin: auto 30px 50px 30px;
+    margin: auto 30px;
     /*overflow-y: auto;*/
 }
 

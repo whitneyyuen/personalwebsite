@@ -1,7 +1,8 @@
 import { Experience, Skill } from './types';
 
 export const Nav_Links = [
-  { name: 'About', href: '#intro' },
+  { name: 'Introduction', href: '#intro' },
+  { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experiences' },
   { name: 'Contact', href: '#contact' },
