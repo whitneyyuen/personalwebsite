@@ -2,12 +2,15 @@
 #contact {
     /*height: calc(100vh - 7rem);*/
     margin: auto 30px 120px 30px;
+    word-break: break-word;
 }
 
 @media screen and (max-width: 576px){
     #contact {
-        /*height: calc(100vh - 9.5rem);*/
-        margin: auto 10px 50px 10px;
+        /*height: calc(100vh - 9.5rem);
+        margin: auto 10px 50px 10px;*/
+        margin: auto 10px;
+        
     }
 }
 

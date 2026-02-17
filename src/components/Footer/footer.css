@@ -1,12 +1,12 @@
 .footer {
-    background: linear-gradient(#6ecdf7, #0083b9, #6ecdf7);
-    bottom: 0;
+    /*background: linear-gradient(#07966e, #58ceb4, #07966e);
+    bottom: 0;*/
     color: #f0f7fb;
-    display: inline-flex;
+    /*display: inline-flex;*/
     height: 2rem;
     margin: initial;
     padding: 0 8px;
-    position: fixed;
+    /*position: fixed;*/
     text-align: center;
     width: 100%;
 }

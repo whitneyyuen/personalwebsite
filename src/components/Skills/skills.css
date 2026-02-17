@@ -1,0 +1,9 @@
+#skills {
+    margin: auto 30px 50px 30px;
+}
+
+@media screen and (max-width: 576px){
+    #skills {
+        margin: auto 10px;
+    }
+}

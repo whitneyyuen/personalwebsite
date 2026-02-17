@@ -2,35 +2,6 @@ a:hover {
     opacity: 0.7;
 }
 
-.cv {
-    background-color: black;
-    border: 1px solid #0de283;
-    border-radius: 8px;
-    display: inline-block;
-    float: right;
-    font-size: 20px;
-    margin: 5px 0 5px 5px;
-    padding: 10px 15px;
-}
-
-@media screen and (max-width: 576px){
-    .cv {
-        float: unset;
-        margin: 5px 5px 5px 0;
-    }
-}
-
-.cv a {
-    color: #0de283;
-    text-decoration: auto;
-}
-
-.cv:hover {
-    background: grey;
-    color: #f1e7e7 !important;
-    cursor: pointer;
-}
-
 .profile {
     margin-top: 5px;
     height: fit-content;
@@ -51,6 +22,7 @@ a:hover {
 @media screen and (max-width: 576px){
     #intro {
         /*height: calc(100vh - 9.5rem);*/
+        margin: auto 10px;
     }
 }
 

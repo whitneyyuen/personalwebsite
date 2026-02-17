@@ -1,14 +1,54 @@
 import React from 'react';
 import './intro.css';
 import { Col, Container, Row } from 'react-bootstrap';
+import { USER_INFO } from '../../constants';
 import imageLink from '../../assets/selfie.JPG';
-import cv from '../../assets/CV.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 const Intro = () => {
     return (
-        <section id="intro">
+        <section id="intro" className="min-h-screen flex flex-col justify-center items-center px-6 relative overflow-hidden">
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-600/10 rounded-full blur-[100px] -z-10"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-white/5 rounded-full blur-[100px] -z-10"></div>
+
+            <div className="text-center max-w-4xl mx-auto">
+                <div className="inline-block px-4 py-1.5 mb-6 rounded-full glass border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-widest animate-fade-in">
+                    Available for new opportunities
+                </div>
+
+                <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Hi, I'm <span className="text-white font-medium">{USER_INFO.name}</span>. I build high-performance web applications and integrate cutting-edge AI to solve real-world problems.
+                </p>
+            </div>
+
+            <div className="container mx-auto">
+                <div className="grid grid-cols-1 gap-16 items-center">
+                    <div className="relative">
+                        <img src={imageLink} alt="Whitney Yuen profile" className="profile" />
+                        {/*<div className="w-full aspect-[3/4] rounded-3xl overflow-hidden glass p-3 border border-white/10 group">
+                            <img
+                                src={imageLink}
+                                alt="Whitney Yuen Profile"
+                                className="profile w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700"
+                            />
+                        </div>*/}
+                    </div>
+
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">About <span className="text-gradient">Me</span></h2>
+                        <p className="text-slate-400 leading-relaxed mb-6">
+                            {USER_INFO.bio}
+                        </p>
+                        <p className="text-slate-400 leading-relaxed mb-10">
+                            I am a Software Engineer based in Toronto. With a strong foundation in backend development and experience leading Agile teams, I specialize in building robust enterprise solutions. I enjoy the intersection of clean code, efficient algorithms, and seamless user experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            {/*
             <div className="introContent">
                 <Container>
                     <Row>
@@ -203,14 +243,11 @@ const Intro = () => {
                                         </Row>
                                     </Container>
                                 </div>
-                                <div className="cv">
-                                    <a href={cv} download="cv_whitney.pdf"><FontAwesomeIcon className="iconClass" icon={faFile} />View Full Resume</a>
-                                </div>
                             </div>
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div>*/}
         </section>
     )
 }
