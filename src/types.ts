@@ -1,7 +1,7 @@
 export interface Skill {
   name: string;
   level: number;
-  category: 'Frontend' | 'Backend' | 'Tools' | 'AI';
+  category: 'Frontend' | 'Backend' | 'Database' | 'Tools' | 'AI' | 'Framework';
 }
 
 export interface Experience {
